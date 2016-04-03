@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
-
+IBOutlet UIButton *mybutton;
+IBOutlet UITextField *mytext;
 
 @end
 

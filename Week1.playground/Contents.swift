@@ -2,17 +2,24 @@
 
 import UIKit
 
-for i in 0...100 {
-    
-    switch i {
-    case 40...60:
-        print("aa");
-    default:
-        if (i % 5 == 0) {
-            print("# \(i) " + " par!!");
-        }
-        
+func printNumber(a:Int) {
+    if (a % 5 == 0) {
+        print("# \(a) " + " Bingo!!!");
     }
-    
-    
+    if (a % 2 == 0) {
+        print("# \(a) " + " par!!");
+    }
+    if (a % 2 != 0) {
+        print("# \(a) " + " impar!!");
+    }
+}
+
+for i in 0...100 {
+    switch i {
+        case 30...40:
+            print("# \(i) " + " Viva Swift!!!");
+            printNumber(i);
+        default:
+            printNumber(i);
+    }
 }
